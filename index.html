@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Shoura - Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family:'Courier New', Courier, monospace
+        }
+
+        #preloader {
+            background: #fff url(preloader.gif) no-repeat center center;
+            background-size: 20%;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 15px 40px;
+        }
+
+        .navbar-name {
+            font-size: 1.2rem;
+            color: #555555;
+            font-weight: 300;
+            transition: 0.3s ease;
+        }
+
+        .navbar-name:hover {
+            color: #888888;
+            transform: scale(1.1);
+        }
+
+        .navbar-button {
+            background-color: #b0d5c4;
+            color: #555555;
+            border: none;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        .navbar-button a {
+            color:  black;
+            text-decoration: none;
+        }
+
+        .navbar-button:hover {
+            background-color: #c0e5d4;
+            color: #888888;
+        }
+
+        .navbar-contact {
+            color: #555555;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .navbar-contact:hover {
+            color: #888888;
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        .main-content {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            width: 30%;
+            height: 280rem;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            width: 70%;
+            padding: 20px;
+            background-color: #ffffff;
+            display: inline-block;
+        }
+
+        .green-square {
+            width: 100%;
+            height: 10rem;
+            background-color: #b0d5c4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: #555555;
+            font-weight: 100;
+            text-align: center;
+            position: relative;
+            top: 5rem;
+        }
+
+        .container-text {
+            letter-spacing: 5px;
+            font-weight: 50;
+            text-align: center;
+            position: relative;
+            top: 10rem;
+        }
+
+        .project-text {
+            font-size: 5rem;
+            text-align: center;
+            position: relative;
+            top: 50rem;
+            letter-spacing: 5px;
+        }
+
+        .project-container {
+            width: 100%;
+            height: 70rem;
+            display: flex;
+            margin-bottom: 30rem;
+            position: relative;
+            top: 70rem;
+            background-color: #f1f1f1;
+            border-radius: 50px;
+        }
+
+        .left-side-container {
+            width: 40%;
+            font-size: 4rem;
+            text-align: center;
+            overflow-wrap: break-word;
+            margin: auto;
+            border-right: 1px solid black;
+        }
+
+        .right-side-container {
+            width: 60%;
+            font-size: 2rem;
+            text-align: center;
+            overflow-wrap: break-word;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .right-side-container h5 {
+            font-weight: 100;
+            float: left;
+            text-align: left;
+            position: relative;
+            left: 3rem;
+        }
+
+        .skills {
+            height: 15rem;
+            display: flex;
+            margin: 20px;
+            align-items: center;
+            overflow: auto;
+        }
+
+        .skills img {
+            max-width: 30%;
+            max-height: 30%;
+            padding: 9%;
+            transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .skills img:hover {
+            transform: scale(1.1);
+        }
+
+        .right-side-container a {
+            color: black;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            var loader = document.getElementById("preloader");
+            loader.style.display = "none";
+        });
+    </script>
+</head>
+<body>
+
+    <div id="preloader"></div>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-name">Mohammed Shoura</div>
+            <div>
+                <a href="contact.html" class="navbar-contact">Contact me</a>
+                <button class="navbar-button"><a href="#projects">My Work</a></button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="green-square">Web Development Student at Codebrave Lebanon</div>
+                <div class="skills">
+                    <img src="Resources/html-logo.png">
+                    <img src="Resources/css-logo.png">
+                    <img src="Resources/javascript-logo.png">
+                    <img src="Resources/python-logo.png">
+                </div>
+            </div>
+            <div class="content">
+                <p class="container-text" style="font-size: 4rem;">Hey!</p>
+                <p class="container-text" style="font-size: 2rem;">
+                    My name is Mohammed EL Shoura<br>
+                    I am a 17 years old student at Codebrave Lebanon<br>
+                    Learning HTML, Javascript and CSS
+                </p>
+                <p class="project-text">My Projects</p>
+
+                <div id="projects" class="project-container">
+                    <div class="left-side-container"> Python Project:  <br>
+                        <br>
+                    Simple Banking system</div>
+                    <div class="right-side-container">
+                        <p>This banking system allows users to manage their accounts by creating new ones, logging in, making deposits and withdrawals,
+                             transferring money, and checking their balance, and user data is stored in a JSON file for persistence.</p>
+                        <h5>
+                            • Create an account or log in to an existing one.<br>
+                            • Deposit money into your account.<br>
+                            • Withdraw money from your account.<br>
+                            • Transfer money to other users.<br>
+                            • Check your account balance.<br>
+                            • Log out when you're done.<br>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="left-side-container"> Guide to My Country Project: <br>
+                        <br>
+                        Egypt
+                    </div>
+                    <div class="right-side-container">
+                        <p>In this project I made my very first website, discussing the Food, Places and History of egypt with a quick glimpse of information <br>
+                        I have used CSS and HTML for this project, and i am fairly happy with how it turned out
+                        </p>
+                        <a href="https://exploregypt.netlify.app/">Click Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

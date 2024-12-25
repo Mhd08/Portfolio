@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mohammed Shoura</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 1rem 2rem;
+        }
+
+        .navbar-name {
+            font-size: 1.2rem;
+            color: #555555;
+            font-weight: 300;
+            transition: 0.3s ease;
+        }
+
+        .navbar-name:hover {
+            color: #888888;
+            transform: scale(1.1);
+        }
+
+        .navbar-button {
+            background-color: #b0d5c4;
+            color: #555555;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        .navbar-button a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar-button:hover {
+            background-color: #c0e5d4;
+            color: #888888;
+        }
+
+        .navbar-contact {
+            color: #555555;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+
+        .navbar-contact:hover {
+            color: #888888;
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-top: 10%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .intro-section h2 {
+            font-size: 2rem;
+            color: #555555;
+            margin-bottom: 1rem;
+        }
+
+        .intro-section p {
+            font-size: 1rem;
+            color: #777777;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 5% auto 0;
+            padding: 2rem;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-top: 1rem;
+            color: #555555;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #b0d5c4;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .contact-form textarea {
+            height: 8rem;
+            resize: vertical;
+        }
+
+        .contact-form .send-button {
+            margin-top: 1.5rem;
+            padding: 0.8rem;
+            background-color: #b0d5c4;
+            color: #555555;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .contact-form .send-button:hover {
+            background-color: #c0e5d4;
+            color: #888888;
+        }
+
+        footer {
+            background-color: #b0d5c4;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="navbar-name">Mohammed Shoura</div>
+            <div>
+                <a class="navbar-contact">Contact me</a>
+                <button class="navbar-button"><a href="index.html">My Work</a></button>
+            </div>
+        </div>
+
+
+        <div class="intro-section">
+            <h2>Like My Work?</h2>
+            <p>Feel free to contact me</p>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="button" class="send-button">Send Message</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>This website was made by Mohammed El Shoura</p>
+        </footer>
+    </div>
+</body>
+</html>
